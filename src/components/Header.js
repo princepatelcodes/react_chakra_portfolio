@@ -82,7 +82,7 @@ export default function Header() {
                         _hover={{
                             bg: 'primary.900',
                         }}>
-                        Resume
+                        View Resume
                     </Button>
                 </Stack>
             </Flex>
@@ -112,6 +112,8 @@ const DesktopNav = () => {
                                 fontWeight={500}
                                 color={linkColor}
                                 _hover={{
+                                    bg : 'gray.200',
+                                    borderRadius : 6,
                                     textDecoration: 'none',
                                     color: linkHoverColor,
                                 }}>
@@ -147,15 +149,17 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
             href={href}
             role={'group'}
             display={'block'}
-            p={2}
+            p={3}
             rounded={'md'}
-            _hover={{ bg: useColorModeValue('primary.700', 'gray.900') }}>
+            _hover={{ bg: useColorModeValue('primary.700', 'gray.900'), textDecoration: 'none', }}>
             <Stack direction={'row'} align={'center'}>
                 <Box>
                     <Text
                         transition={'all .3s ease'}
-                        _groupHover={{ color: 'white' }}
-                        decoration={'none'}
+                        _groupHover={{ color: 'white', textDecoration: 'none', }}
+                        _hover={{
+                            textDecoration: 'none',
+                        }}
                         fontWeight={500}>
                         {label}
                     </Text>
@@ -169,7 +173,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
                     justify={'flex-end'}
                     align={'center'}
                     flex={1}>
-                    <Icon color={'white'} w={5} h={5} as={ChevronRightIcon} />
+                    <Icon color={'white'} w={8} h={8} as={ChevronRightIcon} />
                 </Flex>
             </Stack>
         </Link>
@@ -273,11 +277,11 @@ const NAV_ITEMS = [
         ],
     },
     {
-        label: 'Learn Design',
+        label: 'Skills',
         href: '#',
     },
     {
-        label: 'Hire Designers',
+        label: 'Projects',
         href: '#',
     },
 ];

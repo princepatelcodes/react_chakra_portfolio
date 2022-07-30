@@ -8,7 +8,7 @@ export default function SkillCard({ icon, title, description }) {
     };
 
     return (
-        <Box  data-aos="zoom-in" shadow={'md'} bg='white' padding={8} borderRadius={8}>
+        <Box cursor={'pointer'}  data-aos="zoom-in" shadow={'md'} bg='white' padding={8} borderRadius={8}>
             <Box bg={'primary.800'} display='inline-block' borderRadius={'32px'} p={3}>
 
            <DevIcon icon={icon} style={devIconStyle} />

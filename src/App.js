@@ -1,12 +1,13 @@
 
 import './App.css';
 import { useEffect } from 'react';
-import { Box, ChakraProvider, Container, extendTheme, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, ChakraProvider, extendTheme, SimpleGrid, Text } from '@chakra-ui/react';
 import Header from './components/Header';
 import SkillCard from './components/SkillCard';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Banner from './components/Banner';
+import Banner2 from './components/Banner2';
+import CTA from './components/CTA';
 
 function App() {
 
@@ -46,28 +47,27 @@ function App() {
     Aos.init({
       duration: 300,
       once: true,
-
     });
   }, []);
 
   return (
     <ChakraProvider theme={theme}>
       <Header></Header>
+      <Banner2 />
+     
 
-    <Banner />
+      <Box px={{ base: '20px', md: '40px', 'lg': '100px' }}>
+        <Text fontSize={'32px'} color={'primary.800'} fontWeight='bold' padding='20px'>My Skills</Text>
 
-    <Box px={{ base : '20px', md : '40px' , 'lg' : '100px'}}>
-      <Text fontSize={'32px'} color={'primary.800'} fontWeight='bold' padding='20px'>My Skills</Text>
+        <SimpleGrid columns={[2, 2, 3, 4]} spacing='24px' padding='12px'>
+          <SkillCard icon='python' title={'Python'} description='lorem ipsum d as asd asd asd ' />
+          <SkillCard icon='dart' title={'Dart'} description='lorem ipsum d as asd asd asd ' />
+          <SkillCard icon='nodejs' title={'Node js'} description='lorem ipsum d as asd asd asd ' />
+          <SkillCard icon='python' title={'Python'} description='lorem ipsum d as asd asd asd d as das da sd asd as da d as ada sda da sa sd  ' />
 
-      <SimpleGrid columns={[2, 2, 3, 4]} spacing='28px' padding='20px'>
-        <SkillCard icon='python' title={'Python'} description='lorem ipsum d as asd asd asd ' />
-        <SkillCard icon='dart' title={'Dart'} description='lorem ipsum d as asd asd asd ' />
-        <SkillCard icon='nodejs' title={'Node js'} description='lorem ipsum d as asd asd asd '  />
-        <SkillCard icon='python' title={'Python'} description='lorem ipsum d as asd asd asd d as das da sd asd as da d as ada sda da sa sd  ' />
-
-      </SimpleGrid>
-    </Box>
-
+        </SimpleGrid>
+      </Box>
+      <CTA />
     </ChakraProvider>
   );
 }

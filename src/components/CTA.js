@@ -2,7 +2,7 @@ import { Box, Button, Container, Heading, IconButton, Stack, Text, useBreakpoint
 import * as React from 'react'
 import DevIcon from 'devicon-react-svg';
 
-export default function Banner() {
+export default function CTA() {
     const devIconStyle = {
         fill: "#1c1c1c",
         width: "32px",
