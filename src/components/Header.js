@@ -278,10 +278,14 @@ const NAV_ITEMS = [
     },
     {
         label: 'Skills',
-        href: '#',
+        href: '#skills',
     },
     {
         label: 'Projects',
         href: '#',
+    },
+    {
+        label: 'Freelance',
+        href: '#freelance',
     },
 ];

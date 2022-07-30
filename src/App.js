@@ -6,8 +6,9 @@ import Header from './components/Header';
 import SkillCard from './components/SkillCard';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Banner2 from './components/Banner2';
+import Banner from './components/Banner';
 import CTA from './components/CTA';
+import { Footer } from './components/Footer';
 
 function App() {
 
@@ -53,10 +54,10 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Header></Header>
-      <Banner2 />
+      <Banner />
      
 
-      <Box px={{ base: '20px', md: '40px', 'lg': '100px' }}>
+      <Box id='skills' px={{ base: '20px', md: '40px', 'lg': '100px' }}>
         <Text fontSize={'32px'} color={'primary.800'} fontWeight='bold' padding='20px'>My Skills</Text>
 
         <SimpleGrid columns={[2, 2, 3, 4]} spacing='24px' padding='12px'>
@@ -68,6 +69,7 @@ function App() {
         </SimpleGrid>
       </Box>
       <CTA />
+      <Footer/>
     </ChakraProvider>
   );
 }

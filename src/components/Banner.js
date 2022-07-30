@@ -1,7 +1,7 @@
 import { Box, Container, Heading, Highlight, Image, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
 
-export default function Banner2() {
+export default function Banner() {
   return (
     <Container maxW={'95%'}>
         <SimpleGrid columns={[1,1,2]} spacing={[8, 8, 20]}>
@@ -9,8 +9,10 @@ export default function Banner2() {
             <Box order={{ base : 2, md : 1}}  color={'primary.900'} display='flex' flexDirection={'column'} alignItems={{ base : 'center', md : 'start'}} justifyContent={'center'}>
             
             <Heading size={['lg', 'lg', '2xl']}>Hey I am Prince Patel.</Heading>
-            <Text color={'gray.600'} py={2}>I am currently pursuing MCA form College of Engineering, Anna university, Tamil Nadu.</Text>
-            <Text textAlign={['center', 'center','inherit']} color={'gray.600'}>I am looking for <Highlight query='internship' styles={{ px: '1', py: '1', bg: 'green.100' }}>internship</Highlight>  or <Highlight query='freelance projects' styles={{ px: '1', py: '1', bg: 'blue.100' }}>Freelance Projects</Highlight>.</Text>
+            
+            <Text fontSize={['md', 'lg', 'xl']} textAlign={['center', 'center','inherit']} color={'gray.600'} py={2}>I am currently pursuing MCA form College of Engineering, Anna university, Tamil Nadu.</Text>
+
+            <Text fontSize={['md', 'lg', 'xl']} textAlign={['center', 'center','inherit']} color={'gray.600'}>I am looking for <Highlight query='internship' styles={{ px: '1', py: '1', bg: 'green.100' }}>internship</Highlight>  or <Highlight query='freelance projects' styles={{ px: '1', py: '1', bg: 'blue.100' }}>Freelance Projects</Highlight>.</Text>
             
             </Box>
             <Box order={{ base : 1, md : 2}} p={8} >
