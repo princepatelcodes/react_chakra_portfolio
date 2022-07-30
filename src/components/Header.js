@@ -52,10 +52,14 @@ export default function Header() {
                 </Flex>
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
                     <Text
+                        fontWeight={'bold'}
                         textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
                         fontFamily={'heading'}
-                        color={useColorModeValue('gray.800', 'white')}>
-                        Logo
+                        bg={'gray.100'}
+                        px='3'
+                        borderRadius={'lg'}
+                        color={useColorModeValue('primary.800', 'white')}>
+                        Prince Patel
                     </Text>
 
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -69,24 +73,16 @@ export default function Header() {
                     direction={'row'}
                     spacing={6}>
                     <Button
-                        as={'a'}
-                        fontSize={'sm'}
-                        fontWeight={400}
-                        variant={'link'}
-                        href={'#'}>
-                        Sign In
-                    </Button>
-                    <Button
                         display={{ base: 'none', md: 'inline-flex' }}
                         fontSize={'sm'}
                         fontWeight={600}
                         color={'white'}
-                        bg={'primary.400'}
+                        bg={'primary.700'}
                         href={'#'}
                         _hover={{
-                            bg: 'primary.300',
+                            bg: 'primary.900',
                         }}>
-                        Sign Up
+                        Resume
                     </Button>
                 </Stack>
             </Flex>
@@ -153,16 +149,17 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
             display={'block'}
             p={2}
             rounded={'md'}
-            _hover={{ bg: useColorModeValue('primary.100', 'gray.900') }}>
+            _hover={{ bg: useColorModeValue('primary.700', 'gray.900') }}>
             <Stack direction={'row'} align={'center'}>
                 <Box>
                     <Text
                         transition={'all .3s ease'}
-                        _groupHover={{ color: 'primary.400' }}
+                        _groupHover={{ color: 'white' }}
+                        decoration={'none'}
                         fontWeight={500}>
                         {label}
                     </Text>
-                    <Text fontSize={'sm'}>{subLabel}</Text>
+                    <Text _groupHover={{ color: 'gray.400' }} fontSize={'sm'}>{subLabel}</Text>
                 </Box>
                 <Flex
                     transition={'all .3s ease'}
@@ -172,7 +169,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
                     justify={'flex-end'}
                     align={'center'}
                     flex={1}>
-                    <Icon color={'primary.400'} w={5} h={5} as={ChevronRightIcon} />
+                    <Icon color={'white'} w={5} h={5} as={ChevronRightIcon} />
                 </Flex>
             </Stack>
         </Link>
