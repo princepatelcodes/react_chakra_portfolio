@@ -1,3 +1,0 @@
-- Show resume in mobile nav
-- Link to email
-- Add github link to navbar
