@@ -42,6 +42,10 @@ function App() {
         900: "#4f358b"
       }
     },
+    fonts: {
+      heading: `'Poppins', sans-serif`,
+      body: `'Poppins', sans-serif`,
+    },
   })
 
   useEffect(() => {
@@ -57,7 +61,7 @@ function App() {
       <Banner />
       <Box id='skills' px={{ base: '20px', md: '40px', 'lg': '100px' }}>
         <Text fontSize={'32px'} color={'primary.800'} fontWeight='bold' padding='20px'>My Skills</Text>
-        <SimpleGrid columns={[2, 2, 3, 4]} spacing='24px' padding='12px'>
+        <SimpleGrid columns={[2, 2, 3, 4]} spacing='38px' padding='12px'>
           <SkillCard icon='python' title={'Python'} description='lorem ipsum d as asd asd asd ' />
           <SkillCard icon='dart' title={'Dart'} description='lorem ipsum d as asd asd asd ' />
           <SkillCard icon='nodejs' title={'Node js'} description='lorem ipsum d as asd asd asd ' />
@@ -65,7 +69,7 @@ function App() {
         </SimpleGrid>
       </Box>
       <CTA />
-      <Footer/>
+      <Footer />
     </ChakraProvider>
   );
 }
