@@ -57,7 +57,7 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <Header></Header>
+      <Header />
       <Banner />
       <Box id='skills' px={{ base: '20px', md: '40px', 'lg': '100px' }}>
         <Text fontSize={'32px'} color={'primary.800'} fontWeight='bold' padding='20px'>My Skills</Text>

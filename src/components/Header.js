@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -21,6 +22,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+import logo from '../images/logo.png'
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -52,18 +54,8 @@ export default function Header() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            fontWeight={"bold"}
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            bg={"gray.100"}
-            px="3"
-            borderRadius={"lg"}
-            color={useColorModeValue("primary.800", "white")}
-          >
-            Prince Patel
-          </Text>
+        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }} alignItems='center'>
+          <Image p={2} src={logo} height='20' />
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -111,9 +103,10 @@ const DesktopNav = () => {
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
-                p={2}
+                px={3}
+                py={3}
                 href={navItem.href ?? "#"}
-                fontSize={"sm"}
+                fontSize={"md"}
                 fontWeight={500}
                 color={linkColor}
                 _hover={{
@@ -247,12 +240,12 @@ const MobileNavItem = ({ label, children, href }) => {
           pl={4}
           borderLeft={1}
           borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
+          borderColor={useColorModeValue("gray.700", "gray.700")}
           align={"start"}
         >
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
+              <Link key={child.label} py={2} href={child.href} color='gray.700'>
                 {child.label}
               </Link>
             ))}
