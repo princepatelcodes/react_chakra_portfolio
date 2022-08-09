@@ -12,7 +12,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Image,
 } from "@chakra-ui/react";

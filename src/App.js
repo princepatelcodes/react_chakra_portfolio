@@ -1,4 +1,3 @@
-
 import './App.css';
 import { useEffect } from 'react';
 import { Box, ChakraProvider, extendTheme, SimpleGrid, Text } from '@chakra-ui/react';
@@ -43,8 +42,8 @@ function App() {
       }
     },
     fonts: {
-      heading: `'Poppins', sans-serif`,
-      body: `'Poppins', sans-serif`,
+      heading: `'Inter', sans-serif`,
+      body: `'Inter', sans-serif`,
     },
   })
 
