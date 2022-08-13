@@ -1,24 +1,102 @@
-import { Box, Container, Heading, Highlight, Image, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, Container,   Flex, Heading, HStack,  IconButton, Image, Tag, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
+import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaTwitter } from 'react-icons/fa'
+import Milestones from './MileStones'
 
 export default function Banner() {
-  return (
-    <Container maxW={'95%'}>
-        <SimpleGrid columns={[1,1,2]} spacing={[8, 8, 20]}>
-            
-            <Box order={{ base : 2, md : 1}}  color={'primary.900'} display='flex' flexDirection={'column'} alignItems={{ base : 'center', md : 'start'}} justifyContent={'center'}>
-            
-            <Heading size={['lg', 'lg', '2xl']}>Hey I am Prince Patel.</Heading>
-            
-            <Text fontSize={['md', 'lg', 'xl']} textAlign={['center', 'center','inherit']} color={'gray.600'} py={2}>I am currently pursuing MCA form College of Engineering, Anna university, Tamil Nadu.</Text>
+    return (
+        <Container maxW={ '7xl'} alignItems='center' my={5}>
 
-            <Text fontSize={['md', 'lg', 'xl']} textAlign={['center', 'center','inherit']} color={'gray.600'}>I am looking for <Highlight query='internship' styles={{ px: '1', py: '1', bg: 'green.100' }}>internship</Highlight>  or <Highlight query='freelance projects' styles={{ px: '1', py: '1', bg: 'blue.100' }}>Freelance Projects</Highlight>.</Text>
-            
-            </Box>
-            <Box order={{ base : 1, md : 2}} p={8} >
-                <Image rounded='2xl' src='https://scontent.fmaa6-1.fna.fbcdn.net/v/t1.6435-9/68260332_873290379707811_356255893546860544_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=8f2k4BLJ1-YAX9gGuYk&_nc_oc=AQkeHUBhTX2S6iziV_kq1u3i-rhLL9ruh3UFqVMRmPd5N_mXBzG8SxLmSLHIDyASgxU&_nc_ht=scontent.fmaa6-1.fna&oh=00_AT9wQoks9OtgxQtFLnUj5ulKCSMsy3eBSytOpvJBQMv58g&oe=630C7FB2' />
-            </Box>
-        </SimpleGrid>
-    </Container>
-  )
+            <Flex width={'100%'} maxW={['full', 'full', '7xl']} justifyContent='center' alignItems={'center'} flexDir={['column', 'column', 'row', 'row']}>
+
+                <Flex width={['md', 'md', '2xl']} flexDir={'column'} justifyContent='space-between' bgColor={'white'} color='black' maxHeight='2xl' minHeight={'4xl'} borderRadius='3xl' p='10' mb={10}>
+
+                    <Box>
+                        <Flex alignItems={'center'} justifyContent='center'>
+                            <Image borderColor={'gray.100'} src='https://www.getillustrations.com/photos/pack/3d-avatar-male_lg.png' width='32' />
+                        </Flex>
+
+                        <Heading textAlign={'center'}>Prince Patel</Heading>
+
+                        <Text fontSize={'sm'} textAlign='center'>
+                            I am currently pursuing MCA form College of Engineering, Anna university, Tamil Nadu. I am looking for <Tag variant={'solid'}>internship</Tag> and <br/> <Tag mt={1} variant={'solid'}> Job Opportunities</Tag><br/> (Degree Completion in 2023).
+                        </Text>
+
+                        <VStack my={4}>
+                            <Tag px={5} variant={'subtle'} colorScheme='primary'>Full Stack Developer</Tag>
+                            <Tag px={5} variant={'subtle'} colorScheme='primary'>App Developer</Tag>
+                        </VStack>
+                        <Box orientation='horizontal' bgColor='gray.300' my={4} height={0.2} />
+                        {/* Icons  */}
+                        <VStack spacing={6} alignItems='start'>
+                            <HStack>
+                                <Box >
+                                    <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaEnvelope /></IconButton>
+                                </Box>
+                                <VStack alignItems={'start'} spacing={0.1}>
+                                    <Text fontSize={'sm'}>Email</Text>
+                                    <Text fontWeight={'600'}>princepatelcodes</Text>
+                                </VStack>
+                            </HStack>
+
+
+                            <HStack>
+                                <Box >
+                                    <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaPhone /></IconButton>
+                                </Box>
+                                <VStack alignItems={'start'} spacing={0.1}>
+                                    <Text fontSize={'sm'}>Phone</Text>
+                                    <Text fontWeight={'600'}>princepatelcodes</Text>
+                                </VStack>
+                            </HStack>
+
+
+                            <HStack>
+                                <Box >
+                                    <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaGithub /></IconButton>
+                                </Box>
+                                <VStack alignItems={'start'} spacing={0.1}>
+                                    <Text fontSize={'sm'}>Github</Text>
+                                    <Text fontWeight={'600'}>princepatelcodes</Text>
+                                </VStack>
+                            </HStack>
+
+                            <HStack>
+                                <Box >
+                                    <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaLinkedin /></IconButton>
+                                </Box>
+                                <VStack alignItems={'start'} spacing={0.1}>
+                                    <Text fontSize={'sm'}>Linkedin</Text>
+                                    <Text fontWeight={'600'}>princepatell</Text>
+                                </VStack>
+                            </HStack>
+
+                            <HStack>
+                                <Box >
+                                    <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaTwitter /></IconButton>
+                                </Box>
+                                <VStack alignItems={'start'} spacing={0.1}>
+                                    <Text fontSize={'sm'}>Twitter</Text>
+                                    <Text fontWeight={'600'}>princepatelt</Text>
+                                </VStack>
+                            </HStack>
+
+                        </VStack>
+                    </Box>
+
+                    <ButtonGroup justifyContent={'center'} alignItems={'center'} variant='ghost' spacing={1.9}>
+                        <IconButton _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '1px solid', borderColor: 'primary.700' }}><FaFacebook size={24} /></IconButton>
+                        <IconButton _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '1px solid', borderColor: 'primary.700' }}><FaInstagram size={24} /></IconButton>
+                        <IconButton _hover={{ color: 'primary.700', bgColor: 'primary.50', border: '1px solid', borderColor: 'primary.700' }}><FaTwitter size={24} /></IconButton>
+                    </ButtonGroup>
+                </Flex>
+                <Box ms={['0', '0', '8']} flexDir={'column'} justifyContent='space-between' bgColor={'white'} color='black' maxHeight='4xl' scrollBehavior={'smooth'} minHeight={'4xl'} borderRadius='3xl' p='10' mb={10}>
+                    <Heading>
+                        Education
+                    </Heading>
+                    <Milestones />
+                </Box>
+            </Flex>
+        </Container>
+    )
 }

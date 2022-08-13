@@ -1,10 +1,14 @@
+import { DiAndroid, DiDart, DiNodejs, DiReact } from "react-icons/di";
+
 const data = [
-    { icon: "python", title: "React Js", description: "asdasdasdasdasdasd" },
-    { icon: "dart", title: "Dart", description: "asdasdasdasdasdasd" },
-    { icon: "nodejs", title: "Node ", description: "asdasdasdasdasdasd" },
-    { icon: "dart", title: "Dart", description: "asdasdasdasdasdasd" },
-    { icon: "nodejs", title: "Node 2", description: "asdasdasdasdasdasd" },
-    { icon: "react", title: "React", description: "asdasdasdasdasdasd" },
+    { icon: DiAndroid, title: "Android", },
+    { icon: DiDart, title: "Dart", },
+    { icon: DiNodejs, title: "Node ", },
+    { icon: DiReact, title: "React Js", },
+    { icon: DiAndroid, title: "Android", },
+    { icon: DiDart, title: "Dart", },
+    { icon: DiNodejs, title: "Node ", },
+    { icon: DiReact, title: "React Js", },
 ];
 
 export default data;
