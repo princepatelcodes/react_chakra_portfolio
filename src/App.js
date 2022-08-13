@@ -1,4 +1,4 @@
-import './App.css';
+ 
 import { useEffect } from 'react';
 import {  ChakraProvider,  extendTheme } from '@chakra-ui/react';
 import Header from './components/Header';
