@@ -30,7 +30,7 @@ export default function Banner() {
                         {/* Icons  */}
                         <VStack spacing={6} alignItems='start'>
                             <HStack>
-                                <Box >
+                                <Box me={2}>
                                     <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaEnvelope /></IconButton>
                                 </Box>
                                 <VStack alignItems={'start'} spacing={0.1}>
@@ -41,7 +41,7 @@ export default function Banner() {
 
 
                             <HStack>
-                                <Box >
+                                <Box me={2} >
                                     <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaPhone /></IconButton>
                                 </Box>
                                 <VStack alignItems={'start'} spacing={0.1}>
@@ -52,7 +52,7 @@ export default function Banner() {
 
 
                             <HStack>
-                                <Box >
+                                <Box me={2}>
                                     <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaGithub /></IconButton>
                                 </Box>
                                 <VStack alignItems={'start'} spacing={0.1}>
@@ -62,7 +62,7 @@ export default function Banner() {
                             </HStack>
 
                             <HStack>
-                                <Box >
+                                <Box me={2}>
                                     <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaLinkedin /></IconButton>
                                 </Box>
                                 <VStack alignItems={'start'} spacing={0.1}>
@@ -72,7 +72,7 @@ export default function Banner() {
                             </HStack>
 
                             <HStack>
-                                <Box >
+                                <Box me={2}>
                                     <IconButton shadow={'md'} variant={'ghost'} border='1px solid' borderColor={'gray.300'}><FaTwitter /></IconButton>
                                 </Box>
                                 <VStack alignItems={'start'} spacing={0.1}>

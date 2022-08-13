@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect } from 'react';
-import { Box, ChakraProvider, Container, extendTheme, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import {  ChakraProvider,  extendTheme } from '@chakra-ui/react';
 import Header from './components/Header';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -8,10 +8,9 @@ import CTA from './components/CTA';
 import { Footer } from './components/Footer';
 import Banner from './components/Banner';
 import SkillsProjects from './components/SkillsProjects';
-import { TopBanner } from './TopBanner';
+ 
 
 function App() {
-
   const theme = extendTheme({
     styles: {
       global: {
@@ -57,7 +56,6 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <TopBanner />
       <Header />
       <Banner />
       <SkillsProjects />
