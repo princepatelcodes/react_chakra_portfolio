@@ -1,10 +1,11 @@
 
-import { Box, Container, Flex, Heading, HStack, IconButton, SimpleGrid, Tag, Text, VStack, Wrap } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, Text, Wrap } from '@chakra-ui/react'
 import React from 'react'
-import { FaEnvelope, FaGithub, FaPhone } from 'react-icons/fa'
 
 import Projects from './Projects'
 import CustomSkillTag from './utils/CustomSkillTag'
+import FrameworkTag from './utils/FrameworkTag'
+import ToolTag from './utils/ToolTag'
 
 export default function SkillsProjects() {
     return (
@@ -33,33 +34,43 @@ export default function SkillsProjects() {
 
                         <Box orientation='horizontal' bgColor='gray.300' my={3} height={0.2} />
                         {/* Icons  */}
-                     
-                          <Wrap>
-                            <CustomSkillTag skill={'Python'} />
-                            <CustomSkillTag skill={'Javascript'} />
-                            <CustomSkillTag skill={'Dart'} />
-                            <CustomSkillTag skill={'HTML'} />
-                            <CustomSkillTag skill={'CSS'} />
-                          </Wrap> 
-                    </Box>
-                    <Box my={2}>
-                        <Heading textAlign={'start'} as='h4' fontSize={'lg'}> Frameworks</Heading>
-                        <Box orientation='horizontal' bgColor='gray.300' my={3} height={0.2} />
+
                         <Wrap>
                             <CustomSkillTag skill={'Python'} />
                             <CustomSkillTag skill={'Javascript'} />
                             <CustomSkillTag skill={'Dart'} />
                             <CustomSkillTag skill={'HTML'} />
                             <CustomSkillTag skill={'CSS'} />
-                          </Wrap> 
-                        
+                        </Wrap>
+                    </Box>
+                    <Box my={2}>
+                        <Heading textAlign={'start'} as='h4' fontSize={'lg'}> Frameworks</Heading>
+                        <Box orientation='horizontal' bgColor='gray.300' my={3} height={0.2} />
+                        <Wrap>
+                            <FrameworkTag skill={'Express JS'} />
+                            <FrameworkTag skill={'React JS'} />
+                            <FrameworkTag skill={'Flutter'} />
+                            <FrameworkTag skill={'Next JS'} />
+                            <FrameworkTag skill={'Django'} />
+                            <FrameworkTag skill={'Fastify'} />
+                        </Wrap>
+
                     </Box>
                     <Box my={5}>
                         <Heading textAlign={'start'} as='h4' fontSize={'lg'}> Other Tools</Heading>
 
                         <Box orientation='horizontal' bgColor='gray.300' my={2} height={0.2} />
-                        {/* Icons  */}
-                         
+
+                        <Wrap>
+                            <ToolTag skill={'Postman'} />
+                            <ToolTag skill={'VS Code'} />
+                            <ToolTag skill={'Insomnia'} />
+                            <ToolTag skill={'Git'} />
+                            <ToolTag skill={'Github'} />
+                            <ToolTag skill={'Bitbucket'} />
+                            <ToolTag skill={'Scrum'} />
+                        </Wrap>
+
                     </Box>
                 </Flex>
             </Flex>

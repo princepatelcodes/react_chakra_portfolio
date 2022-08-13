@@ -1,11 +1,11 @@
-import { Box, Button, ButtonGroup, Container,   Flex, Heading, HStack,  IconButton, Image, Tag, Text, VStack } from '@chakra-ui/react'
+import { Box, ButtonGroup, Container, Flex, Heading, HStack, IconButton, Image, Tag, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaTwitter } from 'react-icons/fa'
 import Milestones from './MileStones'
 
 export default function Banner() {
     return (
-        <Container maxW={ '7xl'} alignItems='center' my={5}>
+        <Container maxW={'7xl'} alignItems='center' my={5}>
 
             <Flex width={'100%'} maxW={['full', 'full', '7xl']} justifyContent='center' alignItems={'center'} flexDir={['column', 'column', 'row', 'row']}>
 
@@ -19,7 +19,7 @@ export default function Banner() {
                         <Heading textAlign={'center'}>Prince Patel</Heading>
 
                         <Text fontSize={'sm'} textAlign='center'>
-                            I am currently pursuing MCA form College of Engineering, Anna university, Tamil Nadu. I am looking for <Tag variant={'solid'}>internship</Tag> and <br/> <Tag mt={1} variant={'solid'}> Job Opportunities</Tag><br/> (Degree Completion in 2023).
+                            I am currently pursuing MCA form College of Engineering, Anna university, Tamil Nadu. I am looking for <Tag variant={'solid'}>internship</Tag> and <br /> <Tag mt={1} variant={'solid'}> Job Opportunities</Tag><br /> (Degree Completion in 2023).
                         </Text>
 
                         <VStack my={4}>

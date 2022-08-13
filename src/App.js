@@ -1,6 +1,6 @@
- 
+
 import { useEffect } from 'react';
-import {  ChakraProvider,  extendTheme } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Header from './components/Header';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -8,7 +8,7 @@ import CTA from './components/CTA';
 import { Footer } from './components/Footer';
 import Banner from './components/Banner';
 import SkillsProjects from './components/SkillsProjects';
- 
+
 
 function App() {
   const theme = extendTheme({
