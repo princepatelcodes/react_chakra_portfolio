@@ -4,7 +4,7 @@ import * as React from 'react'
 export default function CTA() {
     return (
         <Box id='freelance' as="section" py={'8'} mx={[8, 8, 8, 8, 0]}>
-            <Container maxW='7xl' py={{ base: '10', md: '12' }} bg='white' borderRadius='20'>
+            <Container maxW='6xl' py={{ base: '10', md: '12' }} bg='white' borderRadius='20'>
                 <Stack spacing={{ base: '8', md: '10' }}>
                     <Stack spacing={{ base: '4', md: '5' }} align="center">
                         <Heading size={useBreakpointValue({ base: 'lg', md: 'xl' })} color={'primary.800'}>Looking For Freelancer ?</Heading>
