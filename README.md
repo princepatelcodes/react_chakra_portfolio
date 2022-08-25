@@ -6,8 +6,6 @@ Trying to get better with chakra UI by making a portfolio kind of website with a
 
 Add more devicons from [here](https://www.npmjs.com/package/devicon-react-svg).
 
-Trying to take inspiration form : https://mattfarley.ca/
-
 ## Screenshots
 
 ![Image 1](screenshots/s1.png)
