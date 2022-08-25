@@ -10,8 +10,8 @@ Trying to take inspiration form : https://mattfarley.ca/
 
 ## Screenshots
 
-![Image 1](.\screenshots\s1.png)
-![Image 2](.\screenshots\s2.png)
-![Image 3](.\screenshots\s3.png)
-![Image 4](.\screenshots\s4.png)
-![Image 5](.\screenshots\s5.png)
+![Image 1](screenshots/s1.png)
+![Image 2](screenshots/s2.png)
+![Image 3](screenshots/s3.png)
+![Image 4](screenshots/s4.png)
+![Image 5](screenshots/s5.png)
