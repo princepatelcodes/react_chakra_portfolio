@@ -1,7 +1,5 @@
-
-import { Box, Container, Flex, Heading, Text, Wrap } from '@chakra-ui/react'
 import React from 'react'
-
+import { Box, Container, Flex, Heading, Text, Wrap } from '@chakra-ui/react'
 import Projects from './Projects'
 import CustomSkillTag from './utils/CustomSkillTag'
 import FrameworkTag from './utils/FrameworkTag'

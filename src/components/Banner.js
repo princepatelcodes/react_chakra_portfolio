@@ -1,7 +1,8 @@
 import { Box, ButtonGroup, Container, Flex, Heading, HStack, IconButton, Image, Tag, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaTwitter } from 'react-icons/fa'
-import Milestones from './MileStones'
+import Education from './Education'
+ 
 
 export default function Banner() {
     return (
@@ -94,7 +95,7 @@ export default function Banner() {
                     <Heading>
                         Education
                     </Heading>
-                    <Milestones />
+                    <Education />
                 </Box>
             </Flex>
         </Container>

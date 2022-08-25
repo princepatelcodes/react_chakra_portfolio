@@ -16,21 +16,21 @@ const milestones = [
     {
         id: 1,
         date: 'MARCH, 2015',
-        title: 'Completed 10th',
-        description: `Winner of first ever ChakraUI Hackathon. On sait depuis longtemps que .`
+        title: 'Some Project Title 1',
+        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
     },
     {
         id: 2,
         date: 'Feb, 2017',
-        title: 'Completed 12th',
-        description: `Fixing a typo, to fix a bug, contributing to Open Source and collaborating..`
+        title: 'Some Project Title 2',
+        description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
     },
     {
         id: 3,
         date: 'July 30, 2018',
-        title: 'Freelancing, started working for myself',
+        title: 'Some Project Title 3',
         description:
-            'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK.'
+            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.'
     }
 ];
 
