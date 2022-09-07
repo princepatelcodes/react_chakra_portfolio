@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); */
+/* Incase you want to use inter font  */
+
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: 'Inter' !important;
+  font-family: 'Lato' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;

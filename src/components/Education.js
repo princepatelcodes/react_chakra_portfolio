@@ -26,15 +26,15 @@ const milestones = [
     },
     {
         id: 3,
-        date: 'July 30, 2018',
+        date: 'July 30, 2020',
         title: 'Completed Graduation',
         description:
             'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
     },
     {
         id: 4,
-        date: 'July 30, 2020',
-        title: 'Completed Postgrad',
+        date: 'July 30, 2022',
+        title: 'Post Grad Ongoing',
         description:
             'fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est.'
     }

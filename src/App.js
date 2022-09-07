@@ -42,8 +42,8 @@ function App() {
       }
     },
     fonts: {
-      heading: `'Inter', sans-serif`,
-      body: `'Inter', sans-serif`,
+      heading: `'Lato', sans-serif`,
+      body: `'Lato', sans-serif`,
     },
   })
 

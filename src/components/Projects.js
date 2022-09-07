@@ -15,20 +15,20 @@ import {
 const milestones = [
     {
         id: 1,
-        date: 'MARCH, 2015',
-        title: 'Some Project Title 1',
+        date: '2020',
+        title: 'Simple e-Commerce Website',
         description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
     },
     {
         id: 2,
-        date: 'Feb, 2017',
-        title: 'Some Project Title 2',
+        date: 'Feb, 2021',
+        title: 'A React Medical Application',
         description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.`
     },
     {
         id: 3,
-        date: 'July 30, 2018',
-        title: 'Some Project Title 3',
+        date: '2022',
+        title: 'E-Learning App (Ongoing)',
         description:
             'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.'
     }
