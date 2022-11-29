@@ -29,21 +29,22 @@ function App() {
       },
     },
     colors: {
-      primary: {
-        100: "#dbd6e7",
-        200: "#cac2dc",
-        300: "#b8aed0",
-        400: "#a79ac5",
-        500: "#9585b9",
-        600: "#8371ad",
-        700: "#725da2",
-        800: "#604996",
-        900: "#4f358b"
+       primary : {
+        "50": "#f5f7fe",
+        "100": "#d9dffa",
+        "200": "#b8c4f5",
+        "300": "#8fa2ef",
+        "400": "#788fec",
+        "500": "#5874e7",
+        "600": "#3a5ce3",
+        "700": "#163ede",
+        "800": "#002ad2",
+        "900": "#001f9b"
       }
     },
     fonts: {
-      heading: `'Lato', sans-serif`,
-      body: `'Lato', sans-serif`,
+      heading: `'DM Sans', sans-serif`,
+      body: `'DM Sans', sans-serif`,
     },
   })
 

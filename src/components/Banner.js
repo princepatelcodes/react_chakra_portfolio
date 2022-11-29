@@ -7,11 +7,8 @@ import Education from './Education'
 export default function Banner() {
     return (
         <Container maxW={'7xl'} alignItems='center' my={5}>
-
             <Flex width={'100%'} maxW={['full', 'full', '7xl']} justifyContent='center' alignItems={'center'} flexDir={['column', 'column', 'row', 'row']}>
-
                 <Flex width={['md', 'md', '2xl']} flexDir={'column'} justifyContent='space-between' bgColor={'white'} color='black' maxHeight='2xl' minHeight={'4xl'} borderRadius='3xl' p='10' mb={10}>
-
                     <Box>
                         <Flex alignItems={'center'} justifyContent='center'>
                             <Image borderColor={'gray.100'} src='https://www.getillustrations.com/photos/pack/3d-avatar-male_lg.png' width='32' />
